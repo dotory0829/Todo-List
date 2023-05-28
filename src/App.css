@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
+
+/* 공통 사항 */
+.App {
+  text-align: center;
+}
+
+* {
+  font-family: "Nanum Myeongjo", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #c89666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 글꼴 */
+h1 {
+  color: #fff;
+  margin-bottom: .5rem;
+  font-size: 2rem;
+}
+
+p {
+  width: 400px;
+  text-align: left;
+  font-size: large;
+}
+p:hover {
+  font-size: 1.2em;
+}
+
+/* todo 레이아웃 */
+.TodoWrap {
+  background-color: #12343b;
+  width: 30rem;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 3px 3px 3px 3px #000;
+}
+
+.TodoForm {
+  width: 100%;
+  padding: .5rem;
+  border-bottom: #553830 5px ridge;
+}
+
+.todo-input {
+  outline: none;
+  background-color: #000;
+  /* border: 1px solid #e9d8a6; */
+  padding: 0.75rem 1rem;
+  width: 300px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.todo-btn {
+  margin-left: 0.5rem;
+  background: #9b2226;
+  color: #fff;
+  /* border: none; */
+  padding: 0.75rem 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #000;
+}
+
+.TodoItem {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+  background: none;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border: #808080 solid .5px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+/* icon */
+.todo-edit-icon {
+  font-size: 2em;
+  color: #ee9b00;
+}
+.todo-edit-icon:hover {
+  font-size: 2.3rem;
+}
+.todo-delete-icon {
+  margin-left: .3rem;
+  font-size: 2em;
+  color: #1e90ff;
+}
+.todo-delete-icon:hover {
+  font-size: 2.3rem;
+}
+
+/* 완료 기능 */
+.completed {
+  color: #fff;
+  text-decoration: line-through;
+  width: 100%
+}
+.completed::before {
+  content: "완료: ";
+}
